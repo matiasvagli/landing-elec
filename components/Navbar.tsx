@@ -5,9 +5,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { label: "Inicio", href: "#inicio" },
-    { label: "Servicios", href: "#servicios" },
-    { label: "Por qué elegirnos", href: "#nosotros" },
+    { label: "Inicio", href: "/" },
+    { label: "Servicios", href: "/#servicios" },
+    { label: "Por qué elegirnos", href: "/nosotros" },
+    { label: "Mis trabajos", href: "/nosotros#trabajos" },
     { label: "Contacto", href: "#contacto" },
   ];
 
@@ -35,7 +36,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://wa.me/5491100000000"
+              href="https://wa.me/5491171907603"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-sm px-4 py-2 rounded-lg transition-colors"
@@ -78,7 +79,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="https://wa.me/5491100000000"
+                href="https://wa.me/5491171907603"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-sm px-4 py-2 rounded-lg mt-1"

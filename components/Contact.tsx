@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function Contact() {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
 
-  const whatsappNumber = "5491100000000"; // Reemplazar con número real
+  const whatsappNumber = "5491171907603"; // Reemplazar con número real
   const email = "matias.electricista@gmail.com"; // Reemplazar con email real
 
-  const handleWhatsApp = (e: React.FormEvent) => {
+  const handleWhatsApp = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const text = encodeURIComponent(
       `Hola Matías! Soy ${form.name}.\n${form.message}\nTeléfono: ${form.phone}`
@@ -17,7 +17,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="relative py-24 overflow-hidden">
+    <section id="contacto" className="relative py-12 md:py-24 overflow-hidden">
       {/* Imagen de fondo */}
       <div className="absolute inset-0">
         <Image

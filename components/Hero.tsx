@@ -48,14 +48,14 @@ export default function Hero() {
             Instalaciones · Reparaciones · Seguridad Eléctrica
           </p>
           <p className="text-gray-400 text-base mb-10 leading-relaxed">
-            Más de 10 años de experiencia. Presupuesto en el dia,
+            Más de 5 años de experiencia. Presupuesto en el dia,
             trabajo garantizado y atención personalizada en cada obra.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-14">
             <a
-              href="https://wa.me/5491100000000?text=Hola%20Mat%C3%ADas%2C%20necesito%20un%20presupuesto"
+              href="https://wa.me/5491171907603?text=Hola%20Mat%C3%ADas%2C%20necesito%20un%20presupuesto"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-xl shadow-yellow-400/25 hover:shadow-yellow-400/45 hover:scale-[1.02]"
@@ -79,7 +79,7 @@ export default function Hero() {
           {/* Stats */}
           <div className="flex gap-6 sm:gap-10 pt-8 border-t border-white/10">
             {[
-              { value: "+10", label: "Años de experiencia" },
+              { value: "+5", label: "Años de experiencia" },
               { value: "+200", label: "Trabajos realizados" },
               { value: "100%", label: "Garantizado" },
             ].map((s) => (

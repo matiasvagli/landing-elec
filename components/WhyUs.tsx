@@ -37,7 +37,7 @@ const reasons: { icon: LucideIcon; title: string; desc: string }[] = [
 
 export default function WhyUs() {
   return (
-    <section id="nosotros" className="relative py-24 overflow-hidden">
+    <section id="nosotros" className="relative pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden">
 
       {/* === IMAGEN DE FONDO === */}
       <div className="absolute inset-0">
@@ -57,7 +57,7 @@ export default function WhyUs() {
       {/* === CONTENIDO === */}
       <div className="relative z-10 max-w-6xl mx-auto px-4">
 
-        <div className="text-center mb-14">
+        <div className="text-center mb-8 md:mb-14">
           <span className="text-yellow-400 text-sm font-semibold uppercase tracking-widest">
             Por qué elegirme
           </span>
@@ -70,11 +70,11 @@ export default function WhyUs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
           {reasons.map((r) => (
             <div
               key={r.title}
-              className="flex gap-4 bg-gray-900/70 backdrop-blur-sm border border-gray-700/60 hover:border-yellow-400/40 rounded-2xl p-6 transition-colors"
+              className="flex flex-col gap-2 bg-gray-900/70 backdrop-blur-sm border border-gray-700/60 hover:border-yellow-400/40 rounded-2xl p-4 md:p-6 md:flex-row md:gap-4 transition-colors"
             >
               <div className="shrink-0 text-yellow-400">
                 <r.icon size={26} strokeWidth={1.5} />
@@ -87,8 +87,8 @@ export default function WhyUs() {
           ))}
         </div>
 
-        {/* Testimonios */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-5">
+        {/* Testimonios — scroll horizontal en mobile */}
+        <div className="mt-8 md:mt-14 flex md:grid md:grid-cols-3 gap-4 overflow-x-auto pb-2 md:pb-0 md:overflow-visible snap-x snap-mandatory">
           {[
             {
               text: "Matías nos hizo la instalación completa del local en tiempo y forma. Muy prolijo y responsable.",
@@ -108,7 +108,7 @@ export default function WhyUs() {
           ].map((t) => (
             <div
               key={t.name}
-              className="bg-gray-900/70 backdrop-blur-sm border border-gray-700/60 rounded-2xl p-6"
+              className="bg-gray-900/70 backdrop-blur-sm border border-gray-700/60 rounded-2xl p-6 min-w-[80vw] sm:min-w-[60vw] md:min-w-0 snap-start"
             >
               <div className="flex gap-0.5 mb-3">
                 {[...Array(5)].map((_, i) => (

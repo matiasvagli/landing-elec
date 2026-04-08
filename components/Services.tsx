@@ -47,7 +47,7 @@ const services: { icon: LucideIcon; title: string; desc: string }[] = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="relative py-24 overflow-hidden">
+    <section id="servicios" className="relative py-12 md:py-24 overflow-hidden">
 
       {/* Imagen cubre toda la sección */}
       <div className="absolute inset-0">
@@ -81,14 +81,14 @@ export default function Services() {
         </div>
 
         {/* Cards — semi-transparentes para dejar ver la imagen */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
           {services.map((s) => (
             <div
               key={s.title}
-              className="group bg-gray-900/50 backdrop-blur-md border border-white/10 hover:border-yellow-400/50 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
+              className="group bg-gray-900/50 backdrop-blur-md border border-white/10 hover:border-yellow-400/50 rounded-2xl p-4 md:p-6 transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="mb-4 text-yellow-400">
-                <s.icon size={32} strokeWidth={1.5} />
+              <div className="mb-3 text-yellow-400">
+                <s.icon size={26} strokeWidth={1.5} />
               </div>
               <h3 className="text-white font-bold text-base mb-2 group-hover:text-yellow-400 transition-colors">
                 {s.title}
@@ -100,7 +100,7 @@ export default function Services() {
 
         <div className="text-center mt-10">
           <a
-            href="https://wa.me/5491100000000?text=Hola%20Mat%C3%ADas%2C%20quiero%20consultar%20sobre%20un%20servicio"
+            href="https://wa.me/5491171907603?text=Hola%20Mat%C3%ADas%2C%20quiero%20consultar%20sobre%20un%20servicio"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-8 py-3.5 rounded-xl transition-colors shadow-lg shadow-yellow-400/20"
