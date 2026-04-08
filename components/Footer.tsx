@@ -1,3 +1,5 @@
+import { WHATSAPP, EMAIL } from "@/lib/config";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-950 border-t border-gray-800 py-10">
@@ -13,7 +15,7 @@ export default function Footer() {
         </p>
         <div className="flex items-center gap-4">
           <a
-            href="https://wa.me/5491171907603"
+            href={`https://wa.me/${WHATSAPP}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-green-400 transition-colors"
@@ -24,7 +26,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="mailto:matias.electricista@gmail.com"
+            href={`mailto:${EMAIL}`}
             className="text-gray-500 hover:text-yellow-400 transition-colors"
             aria-label="Email"
           >

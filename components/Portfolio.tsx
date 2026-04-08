@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { WHATSAPP } from "@/lib/config";
 import { ImageIcon } from "lucide-react";
 
 // Agregá acá los nombres de tus fotos cuando las tengas
@@ -88,7 +89,7 @@ export default function Portfolio() {
 
         <div className="text-center mt-10">
           <a
-            href="https://wa.me/5491171907603?text=Hola%20Mat%C3%ADas%2C%20quiero%20pedir%20un%20presupuesto"
+            href={`https://wa.me/${WHATSAPP}?text=Hola%20Mat%C3%ADas%2C%20quiero%20pedir%20un%20presupuesto`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-8 py-3.5 rounded-xl transition-colors shadow-lg shadow-yellow-400/20"

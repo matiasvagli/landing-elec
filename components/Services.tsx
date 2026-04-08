@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { WHATSAPP } from "@/lib/config";
 import { ScanSearch, HardHat, Wrench, Lightbulb, Cable, Camera, LayoutPanelTop, Settings2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -100,7 +101,7 @@ export default function Services() {
 
         <div className="text-center mt-10">
           <a
-            href="https://wa.me/5491171907603?text=Hola%20Mat%C3%ADas%2C%20quiero%20consultar%20sobre%20un%20servicio"
+            href={`https://wa.me/${WHATSAPP}?text=Hola%20Mat%C3%ADas%2C%20quiero%20consultar%20sobre%20un%20servicio`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-8 py-3.5 rounded-xl transition-colors shadow-lg shadow-yellow-400/20"

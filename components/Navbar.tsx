@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { WHATSAPP } from "@/lib/config";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -36,7 +37,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://wa.me/5491171907603"
+              href={`https://wa.me/${WHATSAPP}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-sm px-4 py-2 rounded-lg transition-colors"
@@ -79,7 +80,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="https://wa.me/5491171907603"
+                href={`https://wa.me/${WHATSAPP}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-sm px-4 py-2 rounded-lg mt-1"

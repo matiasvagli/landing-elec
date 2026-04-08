@@ -1,19 +1,17 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { WHATSAPP, EMAIL } from "@/lib/config";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
-
-  const whatsappNumber = "5491171907603"; // Reemplazar con número real
-  const email = "matias.electricista@gmail.com"; // Reemplazar con email real
 
   const handleWhatsApp = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const text = encodeURIComponent(
       `Hola Matías! Soy ${form.name}.\n${form.message}\nTeléfono: ${form.phone}`
     );
-    window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank");
+    window.open(`https://wa.me/${WHATSAPP}?text=${text}`, "_blank");
   };
 
   return (
@@ -96,7 +94,7 @@ export default function Contact() {
           <div className="flex flex-col gap-5">
             {/* WhatsApp */}
             <a
-              href={`https://wa.me/${whatsappNumber}`}
+              href={`https://wa.me/${WHATSAPP}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-5 bg-gray-900/70 backdrop-blur-sm border border-gray-700/60 hover:border-green-500/50 rounded-2xl p-6 transition-all group"
@@ -115,7 +113,7 @@ export default function Contact() {
 
             {/* Email */}
             <a
-              href={`mailto:${email}`}
+              href={`mailto:${EMAIL}`}
               className="flex items-center gap-5 bg-gray-900/70 backdrop-blur-sm border border-gray-700/60 hover:border-yellow-400/50 rounded-2xl p-6 transition-all group"
             >
               <div className="w-14 h-14 bg-yellow-400/10 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-yellow-400/20 transition-colors">
@@ -125,7 +123,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="text-white font-bold">Email</div>
-                <div className="text-yellow-400 text-sm">{email}</div>
+                <div className="text-yellow-400 text-sm">{EMAIL}</div>
                 <div className="text-gray-500 text-xs mt-0.5">Respondemos en menos de 24 hs</div>
               </div>
             </a>

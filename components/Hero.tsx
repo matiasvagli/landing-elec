@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { WHATSAPP } from "@/lib/config";
 
 export default function Hero() {
   return (
@@ -55,7 +56,7 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-14">
             <a
-              href="https://wa.me/5491171907603?text=Hola%20Mat%C3%ADas%2C%20necesito%20un%20presupuesto"
+              href={`https://wa.me/${WHATSAPP}?text=Hola%20Mat%C3%ADas%2C%20necesito%20un%20presupuesto`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-xl shadow-yellow-400/25 hover:shadow-yellow-400/45 hover:scale-[1.02]"
