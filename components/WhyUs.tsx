@@ -61,7 +61,7 @@ export default function WhyUs() {
           <span className="text-yellow-400 text-sm font-semibold uppercase tracking-widest">
             Por qué elegirme
           </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-2">
             La diferencia está en los detalles
           </h2>
           <p className="text-gray-400 mt-3 max-w-xl mx-auto">

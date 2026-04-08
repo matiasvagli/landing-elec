@@ -35,7 +35,7 @@ export default function Contact() {
           <span className="text-yellow-400 text-sm font-semibold uppercase tracking-widest">
             Contacto
           </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mt-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-2">
             ¿Necesitás un electricista?
           </h2>
           <p className="text-gray-400 mt-3 max-w-xl mx-auto">

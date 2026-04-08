@@ -71,7 +71,7 @@ export default function Services() {
           <span className="text-yellow-400 text-sm font-semibold uppercase tracking-widest mb-2 block">
             Lo que hago
           </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
             Servicios eléctricos
           </h2>
           <p className="text-gray-300 mt-3 max-w-xl mx-auto text-sm md:text-base">

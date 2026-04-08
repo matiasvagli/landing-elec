@@ -23,7 +23,7 @@ export default function Hero() {
       </div>
 
       {/* === CONTENT === */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full py-32">
+      <div className="relative z-10 max-w-6xl mx-auto px-5 w-full py-24 md:py-32">
         <div className="max-w-xl">
 
           {/* Badge */}
@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-5">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-5">
             Electricista{" "}
             <span className="relative inline-block text-yellow-400">
               Matías
@@ -77,7 +77,7 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="flex gap-10 pt-8 border-t border-white/10">
+          <div className="flex gap-6 sm:gap-10 pt-8 border-t border-white/10">
             {[
               { value: "+10", label: "Años de experiencia" },
               { value: "+200", label: "Trabajos realizados" },
